@@ -103,7 +103,7 @@ padding: 0;
 <body>
 
 <div class="div ">
- <a onclick="remob()"><p id="txt" class="text">XII-SNN</p></a>
+ <a onclick="remob()"><p id="txt" class="text">XII-SSN</p></a>
  <a onclick="change()"><p id="sub"></p>
   </div>
 
@@ -130,7 +130,7 @@ function change(){
    if(sub == na){
   alert('set to null');
 }
-    if(sub == "a"){
+    if(sub == "no"){
     alert("no changes made") } 
 else {
   document.getElementById("sub").innerHTML = sub;
@@ -139,14 +139,14 @@ else {
 } 
 
 function remob(){
-  let password = "sandy"
-  let x = prompt("changing this text requires password")
-  if(x.toLowerCase() == password){
+  let pass = "sandy"
+  let x = prompt("changing this text requires the special spell")
+  if(x.toLowerCase() == pass){
     let bs = prompt("correct password now type the text you want to display")
     document.getElementById("txt").innerHTML = bs;
   }
   else{
-    alert("beep wrong password i prefer talking to sandip for help")
+    alert("beep wrong password i prefer talking to sandy to know the secret spell")
   }
 }
 </script>
